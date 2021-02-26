@@ -1,0 +1,91 @@
+:root {
+    --logo-area-background: #d3fdd1;
+    --input-area-background: #8cfa8d;
+    --logo-input-area-height: auto;
+    --logo-input-padding: 136px;
+    --font-weight: 600;
+}
+
+/* ----------- logo section ----------- */
+#logo-area {
+    background: var(--logo-area-background);
+    height: var(--logo-input-area-height);
+}
+
+/* ----------- input section ----------- */
+#input-area {
+    background: var(--input-area-background);
+    height: var(--logo-input-area-height);
+}
+
+#branding {
+    width: 230px;
+    height: auto;
+}
+
+#input-branding {
+    width: 200px;
+    height: auto;
+}
+
+#match-city-list .matched-city-list {
+    background: #6c757d;
+    cursor: pointer;
+}
+
+#match-city-list .matched-city-list:hover {
+    background: #9ec5fe;
+    color: #343a40;
+}
+
+#match-city-list .matched-city-list:active {
+    background: #6ea8fe;
+}
+
+#city,
+#country,
+#weather-condition,
+#weather-description,
+#temperature,
+#pressure,
+#humidity {
+    font-weight: var(--font-weight);
+}
+
+#condition-img {
+    width: 90px;
+    height: auto;
+}
+
+.margin {
+    margin-bottom: 273px;
+}
+
+.city,
+.country,
+.weather-condition,
+.weather-description,
+.temperature,
+.pressure,
+.humidity {
+    font-weight: var(--font-weight);
+}
+
+.f-s-size {
+    font-size: 1rem;
+    text-align: left;
+}
+
+#history-img {
+    width: 70px;
+    height: 70px;
+}
+
+/* ------------- media query ------------ */
+@media (min-width: 992px) {
+    #branding {
+        width: 350px;
+        height: auto;
+        margin-top: 100px;
+    }
+}
