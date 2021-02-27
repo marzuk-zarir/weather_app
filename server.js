@@ -14,7 +14,7 @@ app.use('/history', require('./api/route'))
 app.listen(PORT, () => {
     console.log(`I am running on http://localhost:${PORT}/`)
     mongoose.connect(
-        'mongodb+srv://marzuk:luca132005@weather-api.aujtl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
+        '', // your remote database URL...
         { useNewUrlParser: true },
         () => console.log('Database Connected')
     )
