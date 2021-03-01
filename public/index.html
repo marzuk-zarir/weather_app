@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- bootstrap styles -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
@@ -13,35 +14,43 @@
         <!-- custom styles -->
         <link rel="stylesheet" href="./styles/style.css" />
         <!-- favicon -->
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link
+            rel="shortcut icon"
+            href="./assets/Weather.ico"
+            type="image/x-icon"
+        />
         <!-- title -->
         <title>A Weather API</title>
     </head>
     <body>
-        <section class="container-fluid">
+        <main class="container-fluid">
             <section class="row">
                 <!-- logo section -->
-                <section
-                    id="logo-area"
-                    class="d-none d-md-block col-md-6 d-flex"
-                >
-                    <div
-                        class="text-center align-content-center m-auto mt-md-5"
-                    >
-                        <img
-                            src="./assets/weather-image.png"
-                            id="branding"
-                            alt="Find Your Weather"
-                        />
-                        <h3 class="text-capitalize mt-3">find your weather</h3>
-                        <p class="lead text-capitalize">
-                            enter your city, check your weather instantly
-                        </p>
+                <section id="logo-area" class="d-none d-md-block col-md-6">
+                    <div class="d-flex">
+                        <div
+                            class="text-center align-content-center m-auto mt-md-5"
+                        >
+                            <img
+                                src="./assets/weather-image.png"
+                                id="branding"
+                                alt="Find Your Weather"
+                            />
+                            <h3 class="text-capitalize mt-3">
+                                find your weather
+                            </h3>
+                            <p class="lead text-capitalize">
+                                enter your city, check your weather instantly
+                            </p>
+                        </div>
                     </div>
                 </section>
                 <!-- input section -->
-                <section id="input-area" class="col-md-6 d-md-flex">
+                <section id="input-area" class="col-12 col-md-6 d-md-flex">
                     <div class="align-content-md-center m-md-auto text-center">
+                        <h2 class="display-5 fw-bold py-2 d-md-none">
+                            Find Your Weather
+                        </h2>
                         <img
                             src="http://openweathermap.org/img/w/01d.png"
                             id="condition-img"
@@ -129,7 +138,7 @@
                     </div>
                 </section>
             </section>
-        </section>
+        </main>
         <!-- bootstrap js -->
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"

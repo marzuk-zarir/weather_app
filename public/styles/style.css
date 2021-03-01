@@ -2,7 +2,7 @@
     --logo-area-background: #d3fdd1;
     --input-area-background: #8cfa8d;
     --logo-input-area-height: auto;
-    --logo-input-padding: 136px;
+    --logo-input-area-min-height: 100vh;
     --font-weight: 600;
 }
 
@@ -10,12 +10,14 @@
 #logo-area {
     background: var(--logo-area-background);
     height: var(--logo-input-area-height);
+    min-height: var(--logo-input-area-min-height);
 }
 
 /* ----------- input section ----------- */
 #input-area {
     background: var(--input-area-background);
     height: var(--logo-input-area-height);
+    min-height: var(--logo-input-area-min-height);
 }
 
 #branding {
